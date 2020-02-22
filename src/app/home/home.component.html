@@ -5,20 +5,20 @@
      fxLayoutAlign.gt-md="space-around center"
      fxLayoutGap="10px">
 
-<mat-card *ngIf="dish" fxFlex>
-  <mat-card-header>
-    <div mat-card-avatar></div>
-    <mat-card-title>
-      <h3>{{dish.name | uppercase}}</h3>
-    </mat-card-title>
-  </mat-card-header>
-  <img mat-card-image src={{dish.image}} alt={{dish.name}}>
-  <mat-card-content>
-    <p>{{dish.description}}
-    </p>
-  </mat-card-content>
-</mat-card>
-<mat-card *ngIf="promotion" fxFlex>
+  <mat-card *ngIf="dish" fxFlex>
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>
+        <h3>{{dish.name | uppercase}}</h3>
+      </mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src={{dish.image}} alt={{dish.name}}>
+    <mat-card-content>
+      <p>{{dish.description}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+  <mat-card *ngIf="promotion" fxFlex>
     <mat-card-header>
       <div mat-card-avatar></div>
       <mat-card-title>
@@ -31,5 +31,19 @@
       </p>
     </mat-card-content>
   </mat-card>
+  <mat-card *ngIf="corporate" fxFlex>
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>
+        <h5>{{corporate.name | uppercase}}</h5>
+      </mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src={{corporate.image}} alt={{corporate.name}}>
+    <mat-card-content>
+      <p>{{corporate.designation}}</p>
+      <p>{{corporate.description}}
+      </p>
+    </mat-card-content>
+  </mat-card>
   
-  </div>
+</div>
